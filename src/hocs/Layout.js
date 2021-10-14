@@ -1,0 +1,16 @@
+import React from 'react';
+import Navbar from '../components/Navbar';
+import { connect } from 'react-redux';
+
+
+const Layout = ({ children }) => {
+
+    return (
+        <div>
+            <Navbar />
+            {children}
+        </div>
+    );
+};
+
+export default connect(null,)(Layout);
